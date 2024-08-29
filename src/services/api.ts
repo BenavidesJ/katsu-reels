@@ -5,6 +5,6 @@ export const api = axios.create({
   timeout: 1000,
   headers: {
     accept: 'application/json',
-    Authorization: process.env.API_AUTHORIZATION,
+    Authorization: `Bearer ${process.env.API_AUTHORIZATION}`,
   },
 });
