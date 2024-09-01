@@ -1,4 +1,4 @@
-import { Spinner } from '@chakra-ui/react';
+import { Heading, Spinner } from '@chakra-ui/react';
 import React from 'react';
 
 interface LayoutProps {
@@ -8,7 +8,7 @@ interface LayoutProps {
 
 export const Layout = ({ children, isLoading }: LayoutProps) => {
   return isLoading ? (
-    <div>
+    <div className="loader-scene">
       <Spinner
         thickness="8px"
         speed="0.65s"
@@ -16,6 +16,9 @@ export const Layout = ({ children, isLoading }: LayoutProps) => {
         color="blue.500"
         size="xl"
       />
+      <Heading as="h3" size="xl">
+        Loading...
+      </Heading>
     </div>
   ) : (
     <main>{children}</main>

@@ -1,0 +1,8 @@
+.movie-card {
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 160%;
+  margin-bottom: 1rem;
+}
